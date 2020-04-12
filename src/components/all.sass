@@ -1,4 +1,8 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap')
+
+//Font vars
+$im-fell: 'IM Fell English SC', serif
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -9,6 +13,41 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+
+.site-title
+  font-family: $im-fell
+  letter-spacing: 0.25em
+  font-size: 6em
+  text-shadow: 2px 2px 4px #aaa
+  padding: 0.25em 0.25em 0 0.25em
+
+.separator > *
+  display: inline-block
+  vertical-align: middle
+
+.separator 
+    font-family: $im-fell
+    text-align: center
+    white-space: nowrap
+    display: block
+    overflow: hidden
+    padding-bottom: 0.5em
+
+.separator:before, .separator:after 
+    content: ""
+    height: 2px
+    width: 35%
+    background-color: gray
+    margin: 0 15px 0 15px
+    display: inline-block
+    vertical-align: middle
+
+.separator:before 
+    margin-left: -100%
+
+.separator:after 
+    margin-right: -100%
+
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -44,12 +83,14 @@ $black: #2b2523
 
 .full-width-image
     width: 100vw
-    height: 400px
+    height: 600px
     background-size: cover
     background-position: bottom
     display: flex
     justify-content: center
     align-items: center
+    //added by steve
+    border: 1px solid #aaa
 
 .btn
     display: inline-block
@@ -114,7 +155,7 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #4b00d633;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;

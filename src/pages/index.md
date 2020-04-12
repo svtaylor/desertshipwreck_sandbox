@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+title: Desert Shipwreck
+image: /img/home-shipwreck-two.jpg
+heading: Desert Shipwreck
+subheading: A US Navy Reservist Mobilized to Kuwait
 mainpitch:
   title: Why Kaldi
   description: >

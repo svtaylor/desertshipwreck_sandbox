@@ -16,17 +16,35 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
+    <h1
+      className="site-title has-text-centered"
+      style={{
+        color: '#303030',
+        lineHeight: '1',
+      }}
+    >
+      {title}
+    </h1>
+    <p
+      className="separator"
+      style={{
+        fontSize: '2em',
+        lineHeight: '1',
+      }}
+    >
+      est. 2020
+    </p>
     <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
+        backgroundPosition: `center`,
         backgroundAttachment: `fixed`,
       }}
     >
-      <div
+{/*       <div
         style={{
           display: 'flex',
           height: '150px',
@@ -62,7 +80,7 @@ export const IndexPageTemplate = ({
         >
           {subheading}
         </h3>
-      </div>
+      </div> */}
     </div>
     <section className="section section--gradient">
       <div className="container">
@@ -98,7 +116,7 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
-                  <BlogRoll />
+                  <BlogRoll count={2}/>
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Read more
