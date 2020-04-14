@@ -5,7 +5,7 @@ image: /img/home-shipwreck-two.jpg
 heading: Desert Shipwreck
 subheading: A US Navy Reservist Mobilized to Kuwait
 mainpitch:
-  title: Why Kaldi
+  title: Hi Everyone
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
@@ -67,4 +67,5 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+published: true
 ---
