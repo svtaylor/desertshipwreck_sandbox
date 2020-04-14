@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
+import { FiHexagon } from 'react-icons/fi'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -40,9 +41,10 @@ const Navbar = class extends React.Component {
         aria-label="main-navigation"
       >
         <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+          <div className="navbar-brand" >
+            <Link to="/" className="navbar-item" title="Logo" style={{ fontSize: '24px'}}>
+              <FiHexagon style={{ color: 'purple', height: '24px', width: '24px'}}/>
+              SHIPWRECK
             </Link>
             {/* Hamburger menu */}
             <div
