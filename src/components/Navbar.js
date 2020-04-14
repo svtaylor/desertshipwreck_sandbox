@@ -44,7 +44,7 @@ const Navbar = class extends React.Component {
           <div className="navbar-brand" >
             <Link to="/" className="navbar-item" title="Logo" style={{ fontSize: '24px'}}>
               <FiHexagon style={{ color: 'purple', height: '24px', width: '24px'}}/>
-              <span>SHIPWRECK<span>
+              <span>SHIPWRECK</span>
             </Link>
             {/* Hamburger menu */}
             <div
