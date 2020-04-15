@@ -1,8 +1,10 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap')
 
 //Font vars
 $im-fell: 'IM Fell English SC', serif
+$cinzel-font: 'Cinzel', serif
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -15,7 +17,7 @@ $body-color: #333
 $black: #2b2523
 
 .site-title
-  font-family: $im-fell
+  font-family: $cinzel-font
   letter-spacing: 0.25em
   font-size: 6em
   text-shadow: 2px 2px 4px #aaa
@@ -121,6 +123,8 @@ $black: #2b2523
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+.navbar-brand span
+  font-family: $cinzel-font
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
