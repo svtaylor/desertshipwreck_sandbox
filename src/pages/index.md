@@ -7,10 +7,13 @@ subheading: A US Navy Reservist Mobilized to Kuwait
 mainpitch:
   title: Hi Everyone 👋
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    My name is Steve, and I'm a reservist in the US Navy. On April 6, 2020, I 
+    received a phone call that I knew was coming, and still dreaded. I was being
+    activated and mobilized.
+
+    I put together this blog as a way to document the process and events, and let
+    everyone know what I'm up to. As an added bonus, I'm playing with front-end
+    web development.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
