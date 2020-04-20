@@ -1,0 +1,40 @@
+.flexWrapper
+    display: flex
+    flex-flow: row wrap
+    max-width: 1200px
+    margin: auto
+    text-align: center
+    padding: 10px
+    border-radius: 8px
+    border: 1px solid white
+    box-shadow: 2px 2px 8px #999
+    transition: border 0.5s
+
+.flexWrapper:hover
+    border: 1px solid mediumvioletred
+ 
+
+.flexWrapper > *
+    padding: 5px
+    flex: 1 100%
+
+.flexImage
+    display: flex
+
+.flexTitle
+    text-align: left
+
+
+.flexFooter
+
+
+.flexThumbnail
+    margin: 0 auto
+    width: 300px
+
+@media screen and ( min-width: 800px )
+    .flexTitle
+        flex: 3 0 0
+    .flexImage
+        flex: 1 0 0
+    

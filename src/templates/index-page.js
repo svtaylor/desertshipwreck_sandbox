@@ -6,6 +6,8 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+import paragraphs from 'lines-to-paragraphs'
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -15,122 +17,89 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
-    <h1
-      className="site-title has-text-centered"
-      style={{
-        color: '#303030',
-        lineHeight: '1',
-      }}
-    >
-      {title}
-    </h1>
-    <p
-      className="separator"
-      style={{
-        fontSize: '2em',
-        lineHeight: '1',
-      }}
-    >
-      est. 2020
-    </p>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `center`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-{/*       <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>
-      </div> */}
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <p>{mainpitch.description}</p>
-                    {/*<h3 className="subtitle">{mainpitch.description}</h3>*/}
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll/>
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
+<div>
+<section>
+<h1
+className="site-title has-text-centered"
+style={{
+color: '#303030',
+lineHeight: '1',
+}}
+>
+{title}
+</h1>
+<p
+className="separator"
+style={{
+fontSize: '2em',
+lineHeight: '1',
+}}
+>
+est. 2020
+</p>
+<div
+className="full-width-image margin-top-0"
+style={{
+backgroundImage: `url(${
+!!image.childImageSharp ? image.childImageSharp.fluid.src : image
+})`,
+backgroundPosition: `center`,
+backgroundAttachment: `fixed`,
+}}
+>
+</div>
+</section>
+
+<section className="section section--gradient">
+  <div className="container">
+
+      <div className="columns">
+        <div className="column is-10 is-offset-1">
+          <div className="content">
+
+              <div className="tile">
+                <h1 className="title">{mainpitch.title}</h1>
               </div>
-            </div>
+              <div className="tile">
+                <p dangerouslySetInnerHTML={{ __html: paragraphs(mainpitch.description) }} />
+              </div>
+
           </div>
         </div>
       </div>
-    </section>
+ 
   </div>
+</section>
+    {/*<div className="columns">
+    <div className="column is-12">
+    <h3 className="has-text-weight-semibold is-size-2">
+    {heading}
+    </h3>
+    <p>{description}</p>
+    </div>
+    </div>*/}
+<section className=''>
+  <div className="column is-12">
+    <h3 className="has-text-weight-semibold is-size-2 has-text-centered">
+      Latest stories
+    </h3>
+    <div className="container">
+      <div className="content" style={{marginTop: '1rem'}}>
+        <BlogRoll />
+      </div>
+    </div>
+  </div>
+  <div className="column is-12 has-text-centered">
+    <Link className="btn" to="/blog">
+      Read more
+    </Link>
+  </div>
+  <br />
+  <br />
+</section>
+</div>
+
+
 )
 
 IndexPageTemplate.propTypes = {

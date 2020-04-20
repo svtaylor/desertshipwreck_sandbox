@@ -10,7 +10,8 @@ mainpitch:
     My name is Steve, and I'm a reservist in the US Navy. On April 6, 2020, I 
     received a phone call that I knew was coming, and still dreaded. I was being
     activated and mobilized.
-
+    
+    
     I put together this blog as a way to document the process and events, and let
     everyone know what I'm up to. As an added bonus, I'm playing with front-end
     web development.
