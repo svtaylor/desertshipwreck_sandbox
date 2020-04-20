@@ -19,35 +19,50 @@ export const IndexPageTemplate = ({
 }) => (
 <div>
 <section>
-<h1
-className="site-title has-text-centered"
-style={{
-color: '#303030',
-lineHeight: '1',
-}}
->
-{title}
-</h1>
-<p
-className="separator"
-style={{
-fontSize: '2em',
-lineHeight: '1',
-}}
->
-est. 2020
-</p>
-<div
-className="full-width-image margin-top-0"
-style={{
-backgroundImage: `url(${
-!!image.childImageSharp ? image.childImageSharp.fluid.src : image
-})`,
-backgroundPosition: `center`,
-backgroundAttachment: `fixed`,
-}}
->
-</div>
+  <h1
+    className="site-title has-text-centered"
+    style={{
+      color: '#303030',
+      lineHeight: '1',
+    }}
+  >
+    {title}
+  </h1>
+  {/*<p
+    className="separator"
+    style={{
+      fontSize: '2em',
+      lineHeight: '1',
+    }}
+  >
+    est. 2020
+  </p>*/}
+  <hr 
+    style={{
+      margin: 'auto',
+      color: '#aaa',
+      width: '50%',
+    }}/>
+  <h3
+    className='site-subtitle has-text-centered'
+    style={{
+      color: '#606060',
+      lineHeight: '1',
+    }}
+  >
+    {subheading}
+  </h3>
+  <div
+    className="full-width-image margin-top-0"
+    style={{
+      backgroundImage: `url(${
+      !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+      })`,
+      backgroundPosition: `center`,
+      backgroundAttachment: `fixed`,
+    }}
+  >
+  </div>
 </section>
 
 <section className="section section--gradient">
@@ -70,14 +85,7 @@ backgroundAttachment: `fixed`,
  
   </div>
 </section>
-    {/*<div className="columns">
-    <div className="column is-12">
-    <h3 className="has-text-weight-semibold is-size-2">
-    {heading}
-    </h3>
-    <p>{description}</p>
-    </div>
-    </div>*/}
+
 <section className=''>
   <div className="column is-12">
     <h3 className="has-text-weight-semibold is-size-2 has-text-centered">
@@ -98,8 +106,6 @@ backgroundAttachment: `fixed`,
   <br />
 </section>
 </div>
-
-
 )
 
 IndexPageTemplate.propTypes = {
