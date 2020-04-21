@@ -7,14 +7,14 @@ subheading: A US Navy Reservist Mobilized to Kuwait
 mainpitch:
   title: Hi Everyone 👋
   description: >
-    My name is Steve, and I'm a reservist in the US Navy. On April 6, 2020, I 
-    received a phone call that I knew was coming, and still dreaded. I was being
-    activated and mobilized.
+    My name is Steve, and I'm a reservist in the US Navy. On March 31st, 2020, I 
+    was notified that I would be activated and mobilized to Kuwait. Most reservists
+    expect that call, but it's still a shock when it comes.
     
     
     I put together this blog as a way to document the process and events, and let
     everyone know what I'm up to. As an added bonus, I'm playing with front-end
-    web development.
+    web development!
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,

@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: Hello Gatsby!
-date: 2020-04-12T04:27:22.674Z
-description: Testing the Netlify CMS
+date: 2020-04-16T02:27:22.674Z
+description: Howdy!
 featuredpost: false
 featuredimage: /img/home-shipwreck-three.jpg
 tags:
