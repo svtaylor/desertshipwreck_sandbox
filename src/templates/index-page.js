@@ -37,12 +37,13 @@ export const IndexPageTemplate = ({
   >
     est. 2020
   </p>*/}
-  <hr 
+  <hr     
     style={{
+      color: 'pink',
       margin: 'auto',
-      color: '#aaa',
       width: '50%',
     }}/>
+
   <h3
     className='site-subtitle has-text-centered'
     style={{

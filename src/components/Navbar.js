@@ -39,13 +39,13 @@ const Navbar = class extends React.Component {
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
-        style={{backgroundColor: '#FFF'}}
+        style={{backgroundColor: '#FFF', borderBottom: '1px solid mediumvioletred'}}
       >
         <div className="container">
           <div className="navbar-brand" >
             <Link to="/" className="navbar-item" title="Logo" style={{ fontSize: '24px'}}>
-              <FiHexagon style={{ color: 'mediumvioletred', height: '24px', width: '24px'}}/>
-              <span style={{paddingTop: '3px', letterSpacing: '-0.05em'}}>DS</span>
+              <FiHexagon style={{ color: 'mediumvioletred', height: '30px', width: '30px'}}/>
+              {/*<span style={{paddingTop: '3px', letterSpacing: '-0.05em'}}>DS</span>*/}
             </Link>
             {/* Hamburger menu */}
             <div

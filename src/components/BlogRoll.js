@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
-import flexStyles from './flex.module.sass'
+import blogStyles from './blogRoll.module.sass'
 
 class BlogRoll extends React.Component {
   render() {
@@ -15,13 +15,13 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className="is-parent column is-12" key={post.id}>
               <article
-                className={`blog-list-item ${flexStyles.flexWrapper} ${
+                className={`blog-list-item ${blogStyles.flexWrapper} ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
-                <div className={flexStyles.flexImage}>
+                <div className={blogStyles.flexImage}>
                   {post.frontmatter.featuredimage ? (
-                    <div className={flexStyles.flexThumbnail}>
+                    <div className={blogStyles.flexThumbnail}>
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -31,7 +31,7 @@ class BlogRoll extends React.Component {
                     </div>
                   ) : null}
                 </div>
-                <div className={`post-meta ${flexStyles.flexTitle}`}>
+                <div className={`post-meta ${blogStyles.flexTitle}`}>
                   <Link
                     className="title has-text-primary is-size-4"
                     to={post.fields.slug}
