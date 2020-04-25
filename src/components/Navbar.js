@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 import { FiHexagon } from 'react-icons/fi'
+import navbarStyle from './navbar.module.sass'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -39,12 +40,12 @@ const Navbar = class extends React.Component {
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
-        style={{backgroundColor: '#FFF', borderBottom: '1px solid mediumvioletred'}}
+        style={{backgroundColor: '#f5f5f5'}}
       >
         <div className="container">
           <div className="navbar-brand" >
-            <Link to="/" className="navbar-item" title="Logo" style={{ fontSize: '24px'}}>
-              <FiHexagon style={{ color: 'mediumvioletred', height: '30px', width: '30px'}}/>
+            <Link to="/" className="navbar-item" title="Logo" >
+              <FiHexagon className={`${navbarStyle.hexagon}`} />
               {/*<span style={{paddingTop: '3px', letterSpacing: '-0.05em'}}>DS</span>*/}
             </Link>
             {/* Hamburger menu */}
@@ -62,27 +63,27 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className={`navbar-start has-text-centered `} >
 
             </div>
             <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/about">
+              <Link className={`${navbarStyle.navbarRight}`} to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className={`${navbarStyle.navbarRight}`}  to="/products">
                 Products
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className={`${navbarStyle.navbarRight}`} to="/blog">
                 Blog
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className={`${navbarStyle.navbarRight}`} to="/contact">
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+              <Link className={`${navbarStyle.navbarRight}`} to="/contact/examples">
+                Form
               </Link>
               <a
-                className="navbar-item"
+                className={`${navbarStyle.navbarRight}`}
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
                 target="_blank"
                 rel="noopener noreferrer"

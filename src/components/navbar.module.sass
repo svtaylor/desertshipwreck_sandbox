@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
+$cinzel-font: 'Cinzel', serif
+$navbar-font: 'Open Sans', serif
+    
+.navbarRight
+    font-family: $navbar-font
+    color: #333
+    line-height: 1.5
+    padding: 0.5rem 0.75rem
+    position: relative
+    display: flex
+    //align-items: center
+    //border-left: 1px solid rgba(255,255,255,1)
+    //border-right: 1px solid rgba(255,255,255,1)
+    border: 2px solid transparent
+    border-radius: 8px
+    align-items: center
+    justify-content: center
+
+.navbarRight:hover
+    border: 2px solid mediumvioletred
+    box-shadow: 2px 2px 8px rgba(20,20,20,.2)
+    //border-right: 1px solid mediumvioletred
+
+.hexagon
+    color: #888
+    height: 30px
+    width: 30px
+    transition: .2s ease
+
+.hexagon:hover
+    color: mediumvioletred
+    transform: scale(2) rotate(90deg)

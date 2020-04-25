@@ -28,18 +28,9 @@ export const IndexPageTemplate = ({
   >
     {title}
   </h1>
-  {/*<p
-    className="separator"
-    style={{
-      fontSize: '2em',
-      lineHeight: '1',
-    }}
-  >
-    est. 2020
-  </p>*/}
   <hr     
     style={{
-      color: 'pink',
+      backgroundColor: 'whitesmoke',
       margin: 'auto',
       width: '50%',
     }}/>
@@ -78,6 +69,7 @@ export const IndexPageTemplate = ({
               </div>
               <div 
                 className="tile"
+                style={{flexFlow: 'row wrap'}}
                 dangerouslySetInnerHTML={{ __html: paragraphs(mainpitch.description) }}
               />
 
