@@ -6,7 +6,9 @@ import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
+import footerStyle from './footer.module.sass'
 
+const today = new Date()
 const Footer = class extends React.Component {
   render() {
     return (
@@ -104,6 +106,10 @@ const Footer = class extends React.Component {
                   />
                 </a>
               </div>
+            </div>
+            <div className={`${footerStyle.subfooter}`}>
+                <p>© {today.getFullYear()}</p>
+                <p>&lt; / &gt;  with  <span style={{color: 'red'}} >&#10084;</span></p>
             </div>
           </div>
         </div>
